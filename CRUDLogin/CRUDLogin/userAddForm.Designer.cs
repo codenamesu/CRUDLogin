@@ -95,6 +95,8 @@
             // 
             this.te비밀번호.Location = new System.Drawing.Point(108, 124);
             this.te비밀번호.Name = "te비밀번호";
+            this.te비밀번호.Properties.PasswordChar = '*';
+            this.te비밀번호.Properties.UseSystemPasswordChar = true;
             this.te비밀번호.Size = new System.Drawing.Size(100, 20);
             this.te비밀번호.TabIndex = 2;
             // 
@@ -103,7 +105,7 @@
             this.btn회원가입.Location = new System.Drawing.Point(26, 254);
             this.btn회원가입.Name = "btn회원가입";
             this.btn회원가입.Size = new System.Drawing.Size(64, 45);
-            this.btn회원가입.TabIndex = 3;
+            this.btn회원가입.TabIndex = 4;
             this.btn회원가입.Text = "회원가입";
             this.btn회원가입.Click += new System.EventHandler(this.btn회원가입_Click);
             // 
@@ -120,18 +122,18 @@
             this.te핸드폰.Location = new System.Drawing.Point(108, 159);
             this.te핸드폰.Name = "te핸드폰";
             this.te핸드폰.Size = new System.Drawing.Size(100, 20);
-            this.te핸드폰.TabIndex = 2;
+            this.te핸드폰.TabIndex = 3;
             // 
             // btn회원탈퇴
             // 
             this.btn회원탈퇴.Location = new System.Drawing.Point(123, 254);
             this.btn회원탈퇴.Name = "btn회원탈퇴";
             this.btn회원탈퇴.Size = new System.Drawing.Size(66, 45);
-            this.btn회원탈퇴.TabIndex = 4;
+            this.btn회원탈퇴.TabIndex = 5;
             this.btn회원탈퇴.Text = "회원탈퇴";
             this.btn회원탈퇴.Click += new System.EventHandler(this.btn회원탈퇴_Click);
             // 
-            // Form02
+            // userAddForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
@@ -149,8 +151,11 @@
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.Name = "Form02";
-            this.Text = "Form02";
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
+            this.Name = "userAddForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "회원가입";
+            this.Load += new System.EventHandler(this.userAddForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.te이름.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.te아이디.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.te비밀번호.Properties)).EndInit();

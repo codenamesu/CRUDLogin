@@ -101,34 +101,52 @@
   <ItemGroup>
     <Compile Include="Data\DataBase.cs" />
     <Compile Include="Data\DataManager.cs" />
-    <Compile Include="Form01.cs">
+    <Compile Include="DIg로그인후.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form01.Designer.cs">
-      <DependentUpon>Form01.cs</DependentUpon>
+    <Compile Include="DIg로그인후.Designer.cs">
+      <DependentUpon>DIg로그인후.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form02.cs">
+    <Compile Include="DIg회원정보수정.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form02.Designer.cs">
-      <DependentUpon>Form02.cs</DependentUpon>
+    <Compile Include="DIg회원정보수정.Designer.cs">
+      <DependentUpon>DIg회원정보수정.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form03.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form03.Designer.cs">
-      <DependentUpon>Form03.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userAddForm.Designer.cs">
+      <DependentUpon>userAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImformaionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImformaionForm.Designer.cs">
+      <DependentUpon>ImformaionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form01.resx">
-      <DependentUpon>Form01.cs</DependentUpon>
+    <EmbeddedResource Include="DIg로그인후.resx">
+      <DependentUpon>DIg로그인후.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form02.resx">
-      <DependentUpon>Form02.cs</DependentUpon>
+    <EmbeddedResource Include="DIg회원정보수정.resx">
+      <DependentUpon>DIg회원정보수정.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form03.resx">
-      <DependentUpon>Form03.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userAddForm.resx">
+      <DependentUpon>userAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImformaionForm.resx">
+      <DependentUpon>ImformaionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

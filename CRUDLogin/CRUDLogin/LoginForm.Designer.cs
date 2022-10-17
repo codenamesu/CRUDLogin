@@ -63,8 +63,11 @@
             // 
             // te비밀번호
             // 
+            this.te비밀번호.EditValue = "";
             this.te비밀번호.Location = new System.Drawing.Point(154, 80);
             this.te비밀번호.Name = "te비밀번호";
+            this.te비밀번호.Properties.PasswordChar = '*';
+            this.te비밀번호.Properties.UseSystemPasswordChar = true;
             this.te비밀번호.Size = new System.Drawing.Size(137, 20);
             this.te비밀번호.TabIndex = 1;
             // 
@@ -86,21 +89,22 @@
             this.btn회원가입.Text = "회원가입";
             this.btn회원가입.Click += new System.EventHandler(this.btn회원가입_Click);
             // 
-            // Form01
+            // LoginForm
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(328, 240);
+            this.ClientSize = new System.Drawing.Size(333, 217);
             this.Controls.Add(this.btn회원가입);
             this.Controls.Add(this.btn로그인);
             this.Controls.Add(this.te비밀번호);
             this.Controls.Add(this.te아이디);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.Name = "Form01";
-            this.Text = "Form01";
+            this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "로그인";
             ((System.ComponentModel.ISupportInitialize)(this.te아이디.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.te비밀번호.Properties)).EndInit();
             this.ResumeLayout(false);

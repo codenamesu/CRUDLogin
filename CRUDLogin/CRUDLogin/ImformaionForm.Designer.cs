@@ -58,15 +58,18 @@
             this.btn회원탈퇴.Text = "회원탈퇴";
             this.btn회원탈퇴.Click += new System.EventHandler(this.btn회원탈퇴_Click);
             // 
-            // Form03
+            // ImformaionForm
             // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 268);
+            this.ClientSize = new System.Drawing.Size(251, 224);
             this.Controls.Add(this.btn회원탈퇴);
             this.Controls.Add(this.te아이디삭제);
             this.Controls.Add(this.labelControl1);
-            this.Name = "Form03";
+            this.Name = "ImformaionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form03";
             ((System.ComponentModel.ISupportInitialize)(this.te아이디삭제.Properties)).EndInit();
             this.ResumeLayout(false);

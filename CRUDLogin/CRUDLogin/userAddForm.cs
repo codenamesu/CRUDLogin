@@ -48,10 +48,12 @@ namespace CRUDLogin
                 {
                     MessageBox.Show("재확인 요망");
                 }
+               
+                
             }
             catch(Exception exc)
             {
-                MessageBox.Show(exc.Message);
+                MessageBox.Show("아이디가 중복되었습니다.");
             }
 
         }
@@ -60,6 +62,11 @@ namespace CRUDLogin
         {
             ImformaionForm form03 = new ImformaionForm();
             form03.ShowDialog();
+        }
+
+        private void userAddForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

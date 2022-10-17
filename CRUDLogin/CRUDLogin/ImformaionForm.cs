@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,35 +27,31 @@ namespace CRUDLogin
             InitializeComponent();
             _connectionAddress = string.Format("Server ={0};Port={1};Database={2};Uid={3};Pwd={4}", _server, _port, _database, _id, _pw);
         }
+          
 
         private void btn회원탈퇴_Click(object sender, EventArgs e)
         {
-            try
-            {
-                MySqlConnection mysqlConnection = new MySqlConnection(_connectionAddress);
-
+            
+                try
                 {
+
+                    MySqlConnection mysqlConnection = new MySqlConnection(_connectionAddress);
                     mysqlConnection.Open();
-                    
+                    string deleteQuery = "DELETE FROM new_gin WHERE id = '" + this.te아이디삭제.Text + "';";
 
-                string deleteQuery = "DELETE FORM new_gin WHERE = id = {0}" ;
+                    MySqlCommand cmd = new MySqlCommand(deleteQuery, mysqlConnection);
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                MessageBox.Show("아이디가 삭제되었습니다.");
 
-                MySqlCommand cmd = new MySqlCommand(deleteQuery, mysqlConnection);
-                if (cmd.ExecuteNonQuery() == -1)
-                {
-                    MessageBox.Show("삭제에 성공했습니다.");
-                    mysqlConnection.Close();
-                    Close();
+                while (dr.Read())
+                     {
+                      }
+                mysqlConnection.Close();   
                 }
-                else
+                catch (Exception exc)
                 {
-                    MessageBox.Show("삭제할 아이디를 다시 적어주세요");
+                    MessageBox.Show(exc.Message);
                 }
-
-            }catch(Exception exc)
-            {
-                MessageBox.Show(exc.Message);
             }
         }
     }
-}
